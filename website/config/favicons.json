@@ -1,0 +1,17 @@
+{
+  "path": "/assets/",
+  "appName": "Strangestarter",
+  "appShortName": "Strangestarter",
+  "appDescription": "Lorem ipsum dolor sit amet",
+  "developerName": "Strangelove Ventures",
+  "developerURL": "https://strangelove.ventures",
+  "background": "#C8F2CE",
+  "theme_color": "#C8F2CE",
+  "icons": {
+    "android": true,
+    "appleIcon": true,
+    "appleStartup": true,
+    "favicons": true,
+    "windows": true
+  }
+}

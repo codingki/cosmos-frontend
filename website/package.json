@@ -1,0 +1,66 @@
+{
+  "name": "website",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "favicons": "npx favicons-compiled-cli --input public/icon.png --config config/favicons.json --output public/assets/ --jsx ui/seo/favicons-meta-tags.jsx",
+    "export": "next export",
+    "lint": "eslint --fix \"**/*.{js,cjs,mjs,jsx,ts,tsx}\" && tsc --noEmit --pretty",
+    "start": "next start",
+    "tokens": "chakra-cli tokens styles/theme.ts"
+  },
+  "dependencies": {
+    "@chakra-ui/cli": "^1",
+    "@chakra-ui/react": "^1",
+    "@chakra-ui/skip-nav": "^1",
+    "@fontsource/inter": "^4",
+    "@fontsource/jetbrains-mono": "^4",
+    "@emotion/cache": "^11",
+    "@emotion/react": "^11",
+    "@emotion/server": "^11",
+    "@emotion/styled": "^11",
+    "date-fns": "^2",
+    "date-fns-tz": "^1",
+    "framer-motion": "^6",
+    "lucide-react": "^0",
+    "next": "^12",
+    "next-seo": "^5",
+    "next-superjson": "^0",
+    "next-transpile-modules": "^9",
+    "react": "^17",
+    "react-dom": "^17",
+    "react-tracked": "^1",
+    "scheduler": "^0",
+    "superjson": "^1",
+    "typescript": "^4",
+    "zustand": "^3"
+  },
+  "devDependencies": {
+    "@types/node": "^14",
+    "@types/react": "^17"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@project/eslint-config"
+    ],
+    "ignorePatterns": [
+      ".next",
+      "__generated__",
+      "node_modules",
+      "out",
+      "public/assets"
+    ],
+    "root": true
+  },
+  "lint-staged": {
+    "*.{json,md}": [
+      "prettier --write"
+    ],
+    "**/*.{js,cjs,mjs,ts,tsx}": [
+      "yarn workspace website eslint --fix"
+    ]
+  },
+  "prettier": "@project/prettier-config",
+  "license": "MIT"
+}

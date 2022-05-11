@@ -1,0 +1,10 @@
+{
+  "name": "Strangestarter",
+  "description": "Lorem ipsum dolor sit amet",
+  "domain": "example.com",
+  "email": "jack@strangelove.ventures",
+  "url": "https://example.com",
+  "twitter": {
+    "username": "@strangelovefund"
+  }
+}

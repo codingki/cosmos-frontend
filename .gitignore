@@ -1,0 +1,13 @@
+**/*.tsbuildinfo
+**/node_modules/
+*.log
+.DS_Store
+.env*
+.next/
+.turbo/
+.vercel/
+dist/
+out/
+
+!.env.example
+!.gitkeep

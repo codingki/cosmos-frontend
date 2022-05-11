@@ -1,0 +1,13 @@
+diff --git a/node_modules/@chakra-ui/theme-tools/dist/declarations/src/component.d.ts b/node_modules/@chakra-ui/theme-tools/dist/declarations/src/component.d.ts
+index 04fecd1..5aeaf3c 100644
+--- a/node_modules/@chakra-ui/theme-tools/dist/declarations/src/component.d.ts
++++ b/node_modules/@chakra-ui/theme-tools/dist/declarations/src/component.d.ts
+@@ -50,7 +50,7 @@ export declare type JSXElementStyles = {
+ };
+ export { runIfFn };
+ export declare type Styles = GlobalStyles & JSXElementStyles;
+-export declare function mode(light: any, dark: any): (props: Dict | StyleFunctionProps) => any;
++export declare function mode<LightValue, DarkValue>(light: LightValue, dark: DarkValue): (props: Dict | StyleFunctionProps) => LightValue | DarkValue;
+ export declare function orient(options: {
+     orientation?: "vertical" | "horizontal";
+     vertical: SystemStyleObject;
