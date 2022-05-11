@@ -46,6 +46,9 @@ $ cd new-project
 ## Setup repository
 
 - Install dependencies by running `yarn install`
+- Update website information in `website/config/favicons.json` and `website/config/metadata.json`
+- Change website icon and social image in `website/public/icon.png` and `website/public/social.png`
+- Generate favicons assets by running `yarn website favicons`
 
 ## Scripts
 
