@@ -11,14 +11,12 @@
     "tokens": "chakra-cli tokens styles/theme.ts"
   },
   "dependencies": {
-    "@chakra-ui/cli": "^1",
-    "@chakra-ui/react": "^1",
-    "@chakra-ui/skip-nav": "^1",
+    "@chakra-ui/cli": "^2",
+    "@chakra-ui/react": "^2",
+    "@chakra-ui/skip-nav": "^2",
     "@fontsource/inter": "^4",
     "@fontsource/jetbrains-mono": "^4",
-    "@emotion/cache": "^11",
     "@emotion/react": "^11",
-    "@emotion/server": "^11",
     "@emotion/styled": "^11",
     "date-fns": "^2",
     "date-fns-tz": "^1",
@@ -28,8 +26,8 @@
     "next-seo": "^5",
     "next-superjson": "^0",
     "next-transpile-modules": "^9",
-    "react": "^17",
-    "react-dom": "^17",
+    "react": "^18",
+    "react-dom": "^18",
     "react-tracked": "^1",
     "scheduler": "^0",
     "superjson": "^1",
@@ -37,8 +35,8 @@
     "zustand": "^3"
   },
   "devDependencies": {
-    "@types/node": "^14",
-    "@types/react": "^17"
+    "@types/node": "^16",
+    "@types/react": "^18"
   },
   "eslintConfig": {
     "extends": [

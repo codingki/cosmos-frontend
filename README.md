@@ -83,7 +83,6 @@ $ cd new-project
 ## Notes
 
 - Make sure the root directory is `website/` and not `/` ([read more](https://vercel.com/docs/concepts/git/monorepos#step-3:-set-the-root-directory))
-- Current React version is `react@17` and `react-dom@17` due to Chakra UI issues ([read more](https://github.com/chakra-ui/chakra-ui/issues/5855))
 
 ## References
 
