@@ -13,7 +13,6 @@
   "dependencies": {
     "@chakra-ui/cli": "^2",
     "@chakra-ui/react": "^2",
-    "@chakra-ui/skip-nav": "^2",
     "@fontsource/inter": "^4",
     "@fontsource/jetbrains-mono": "^4",
     "@emotion/react": "^11",
