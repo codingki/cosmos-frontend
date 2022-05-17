@@ -12,9 +12,13 @@ export const ButtonLink = forwardRef<ButtonLinkProps, "a">(
   function ButtonLink({ children, href = "", isExternal: external, ...rest }, ref) {
     const { Wrap, wrapProps, linkProps } = createLinkProps({ href, external });
 
+    const overrideProps: ButtonLinkProps = {
+      pointerEvents: rest.isDisabled ? "none" : "auto",
+    };
+
     return (
       <Wrap {...wrapProps}>
-        <Button as="a" {...linkProps} {...rest} href={href} ref={ref}>
+        <Button as="a" {...overrideProps} {...linkProps} {...rest} href={href} ref={ref}>
           {children ?? (href ? trimHttp(href) : null)}
         </Button>
       </Wrap>
