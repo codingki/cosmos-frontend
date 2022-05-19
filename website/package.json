@@ -4,7 +4,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "favicons": "npx favicons-compiled-cli --input public/icon.png --config config/favicons.json --output public/assets/ --jsx ui/seo/favicons-meta-tags.jsx",
+    "favicons": "favicons-compiled --input public/icon.png --config config/favicons.json --output public/assets/ --jsx ui/seo/favicons-meta-tags.jsx",
     "export": "next export",
     "lint": "eslint --fix \"**/*.{js,cjs,mjs,jsx,ts,tsx}\" && tsc --noEmit --pretty",
     "start": "next start",
@@ -35,7 +35,8 @@
   },
   "devDependencies": {
     "@types/node": "^16",
-    "@types/react": "^18"
+    "@types/react": "^18",
+    "favicons-compiled-cli": "*"
   },
   "eslintConfig": {
     "extends": [
