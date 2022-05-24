@@ -14,6 +14,7 @@
 - [Using template](#using-template)
 - [Setup repository](#setup-repository)
 - [Scripts](#scripts)
+- [GitHub Workflows](#github-workflows)
 - [Directory structure](#directory-structure)
 - [Notes](#notes)
 - [References](#references)
@@ -27,7 +28,7 @@
 - Flat structure inside `website/` directory
 - Integrated git hooks with [`husky`](https://github.com/typicode/husky) and [`lint-staged`](https://github.com/okonet/lint-staged)
 - Premade [issue templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates) and [pull request templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
-- Lint on push via [GitHub Actions](https://docs.github.com/en/actions)
+- Lint on latest push via [GitHub Actions](https://docs.github.com/en/actions)
 
 ## Using template
 
@@ -57,6 +58,11 @@ $ cd new-project
 - `PORT=12345 yarn dev` - run website dev instance on custom port (non-windows, for windows use [`cross-env`](https://github.com/kentcdodds/cross-env))
 - `yarn website tokens` - generate Chakra UI [theme token typings](https://chakra-ui.com/docs/styled-system/theming/advanced#theme-typings)
 - `yarn website [...args]` - run website scoped commands
+
+## GitHub Workflows
+
+- Lint on latest push ([view workflow schema](./.github/workflows/lint.yml))
+- Manually trigger upgrade dependencies ([view workflow schema](./.github/workflows/dependencies.yml))
 
 ## Directory structure
 
