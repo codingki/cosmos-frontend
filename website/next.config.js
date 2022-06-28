@@ -16,7 +16,7 @@ let nextConfig = {
   reactStrictMode: true,
   redirects: async () => [],
   rewrites: async () => [],
-  swcMinify: true,
+  swcMinify: false,
   trailingSlash: true,
   typescript: {
     ignoreBuildErrors: Boolean(process.env.VERCEL),
