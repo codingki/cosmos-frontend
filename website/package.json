@@ -20,7 +20,7 @@
     "date-fns": "^2",
     "date-fns-tz": "^1",
     "framer-motion": "^6",
-    "lucide-react": "^0",
+    "iconoir-react": "^5",
     "next": "^12",
     "next-seo": "^5",
     "next-superjson": "^0",
