@@ -4,7 +4,7 @@
 
 # Strangestarter
 
-[Next.js](https://nextjs.org) + [Chakra UI](https://chakra-ui.com) + [Turborepo](https://turborepo.org) boilerplate for [Strangelove Ventures](https://www.strangelove.ventures/)' projects
+[Next.js](https://nextjs.org) + [Chakra UI](https://chakra-ui.com) + [Turborepo](https://turborepo.org) boilerplate for [Strangelove Ventures](https://www.strangelove.ventures/)' projects 🐲
 
 ---
 
@@ -24,7 +24,8 @@
 
 ## Features
 
-- Monorepo structure (scoped `eslint` and `prettier` configs)
+- pnpm as default package manager
+- Monorepo structure
 - Flat structure inside `website/` directory
 - Integrated git hooks with [`husky`](https://github.com/typicode/husky) and [`lint-staged`](https://github.com/okonet/lint-staged)
 - Premade [issue templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates) and [pull request templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
@@ -46,18 +47,18 @@ $ cd new-project
 
 ## Setup repository
 
-- Install dependencies by running `yarn install`
+- Install dependencies by running `pnpm install`
 - Update website information in `website/config/favicons.json` and `website/config/metadata.json`
 - Change website icon and social image in `website/public/icon.png` and `website/public/social.png`
-- Generate favicons assets by running `yarn website favicons`
+- Generate favicons assets by running `pnpm website favicons`
 
 ## Scripts
 
-- `yarn build` - build website
-- `yarn dev` - run website dev instance
-- `PORT=12345 yarn dev` - run website dev instance on custom port (non-windows, for windows use [`cross-env`](https://github.com/kentcdodds/cross-env))
-- `yarn website tokens` - generate Chakra UI [theme token typings](https://chakra-ui.com/docs/styled-system/theming/advanced#theme-typings)
-- `yarn website [...args]` - run website scoped commands
+- `pnpm build` - build website
+- `pnpm dev` - run website dev instance
+- `PORT=12345 pnpm dev` - run website dev instance on custom port (non-windows, for windows use [`cross-env`](https://github.com/kentcdodds/cross-env))
+- `pnpm website tokens` - generate Chakra UI [theme token typings](https://chakra-ui.com/docs/styled-system/theming/advanced#theme-typings)
+- `pnpm website [...args]` - run website scoped commands
 
 ## GitHub Workflows
 
@@ -68,12 +69,10 @@ $ cd new-project
 
 ```sh
 ├── packages/             # local packages
-│   ├── eslint-config/    # project eslint configuration
-│   ├── prettier-config/  # project prettier configuration
-│   └── types/            # shared types
 ├── patches/              # package patches
 └── website/              # main website entrypoint
     ├── config/           # various configuration files
+    ├── constants/        # hardcoded constants and variables
     ├── hooks/            # custom react hooks
     ├── lib/              # 3rd party imports/exports (mdx, prisma, etc.)
     ├── pages/            # main next.js pages
@@ -94,6 +93,7 @@ $ cd new-project
 
 - https://chakra-ui.com/docs
 - https://nextjs.org/docs
+- https://pnpm.io
 - https://turborepo.org/docs
 - https://vercel.com/docs
 

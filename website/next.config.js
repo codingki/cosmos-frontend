@@ -1,6 +1,7 @@
 // @ts-check
-/// <reference types="@project/types/vercel" />
+
 /// <reference path="./env.d.ts" />
+/// <reference path="./vercel.d.ts" />
 
 const { withSuperjson } = require("next-superjson");
 const withTranspileModules = require("next-transpile-modules");
@@ -9,7 +10,7 @@ const packageJson = require("./package.json");
 /** @type {import("next").NextConfig} */
 let nextConfig = {
   eslint: {
-    dirs: ["config", "hooks", "lib", "pages", "store", "ui", "utils"],
+    dirs: ["config", "constants", "hooks", "lib", "pages", "store", "styles", "ui", "utils"],
     ignoreDuringBuilds: Boolean(process.env.VERCEL),
   },
   headers: async () => [],

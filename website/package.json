@@ -4,17 +4,15 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "favicons": "favicons-compiled --input public/icon.png --config config/favicons.json --output public/assets/ --jsx ui/seo/favicons-meta-tags.jsx",
+    "favicons": "pnpx favicons-compiled --input public/icon.png --config config/favicons.json --output public/assets/ --jsx ui/seo/favicons-meta-tags.jsx",
     "export": "next export",
     "lint": "eslint --fix \"**/*.{js,cjs,mjs,jsx,ts,tsx}\" && tsc --noEmit --pretty",
     "start": "next start",
     "tokens": "chakra-cli tokens styles/theme.ts"
   },
   "dependencies": {
-    "@chakra-ui/cli": "^2",
     "@chakra-ui/react": "^2",
-    "@fontsource/inter": "^4",
-    "@fontsource/jetbrains-mono": "^4",
+    "@chakra-ui/styled-system": "^2",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "date-fns": "^2",
@@ -28,37 +26,18 @@
     "react": "^18",
     "react-dom": "^18",
     "react-tracked": "^1",
-    "scheduler": "^0",
     "superjson": "^1",
-    "typescript": "^4",
-    "zustand": "^3"
+    "tiny-invariant": "^1",
+    "typescript": "^4"
   },
   "devDependencies": {
     "@types/node": "^16",
-    "@types/react": "^18",
-    "favicons-compiled-cli": "*"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@project/eslint-config"
-    ],
-    "ignorePatterns": [
-      ".next",
-      "__generated__",
-      "node_modules",
-      "out",
-      "public/assets"
-    ],
-    "root": true
+    "@types/react": "^18"
   },
   "lint-staged": {
-    "*.{json,md}": [
-      "prettier --write"
-    ],
     "**/*.{js,cjs,mjs,ts,tsx}": [
-      "yarn workspace website eslint --fix"
+      "eslint --fix"
     ]
   },
-  "prettier": "@project/prettier-config",
   "license": "MIT"
 }

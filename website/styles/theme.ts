@@ -4,28 +4,27 @@ import type { StyleFunctionProps } from "@chakra-ui/theme-tools";
 import { mode } from "@chakra-ui/theme-tools";
 
 import { colors } from "./colors";
+import { themeConfig } from "./theme-config";
 
 export const themeOverrides = (<T extends ThemeOverride>(t: T) => t)({
-  config: {
-    initialColorMode: "system",
-  },
+  config: themeConfig,
   colors: {
-    gray: colors.neutral,
+    ...colors,
   },
   fonts: {
-    body: `'InterVariable', ${defaultTheme.fonts.body}`,
-    heading: `'InterVariable', ${defaultTheme.fonts.heading}`,
-    mono: `'JetBrains Mono', ${defaultTheme.fonts.mono}`,
+    body: `'YOUR_FONT_HERE', ${defaultTheme.fonts.body}`,
+    heading: `'YOUR_FONT_HERE', ${defaultTheme.fonts.heading}`,
+    mono: `'YOUR_FONT_HERE', ${defaultTheme.fonts.mono}`,
   },
   sizes: {
     "screen-h": "100vh",
     "screen-w": "100vw",
-    "sidebar-w": "300px",
   },
   styles: {
     global: (props: StyleFunctionProps) => ({
       ":root": {
         colorScheme: mode("light", "dark")(props),
+        scrollBehavior: "smooth",
       },
       body: {
         bg: mode("gray.100", "gray.900")(props),
@@ -53,3 +52,5 @@ export const theme = extendTheme(
   themeOverrides,
   //
 ) as typeof themeOverrides;
+
+export type Theme = typeof themeOverrides;
