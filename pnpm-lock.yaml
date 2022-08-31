@@ -8,7 +8,7 @@ importers:
   .:
     specifiers:
       '@chakra-ui/cli': ^2
-      '@grikomsn/style-guide': latest
+      '@strangelovelabs/style-guide': latest
       eslint: ^8
       husky: ^8
       lint-staged: ^13
@@ -16,7 +16,7 @@ importers:
       turbo: ^1
     devDependencies:
       '@chakra-ui/cli': 2.1.6
-      '@grikomsn/style-guide': 0.0.6_2xd4q2tc5cqa5as7uugqhp6oue
+      '@strangelovelabs/style-guide': 0.0.1_2xd4q2tc5cqa5as7uugqhp6oue
       eslint: 8.22.0
       husky: 8.0.1
       lint-staged: 13.0.3
@@ -1381,45 +1381,6 @@ packages:
       - supports-color
     dev: true
 
-  /@grikomsn/style-guide/0.0.6_2xd4q2tc5cqa5as7uugqhp6oue:
-    resolution: {integrity: sha512-OikWkzXcjXPOKQpoJTEwh4BkiYJCJh8irhGkITvujRi2MP4WaPeSo8+oBSZRLkOagxqaNenq/u0f2Mg4+I+S1g==}
-    peerDependencies:
-      eslint: ^8
-      prettier: ^2
-      typescript: ^4
-    dependencies:
-      '@babel/eslint-parser': 7.18.9_eslint@8.22.0
-      '@rushstack/eslint-patch': 1.1.4
-      '@typescript-eslint/eslint-plugin': 5.33.1_3bh5nkk7utn7e74vrwtv6rxmt4
-      '@typescript-eslint/parser': 5.33.1_eslint@8.22.0
-      eslint: 8.22.0
-      eslint-config-prettier: 8.5.0_eslint@8.22.0
-      eslint-import-resolver-alias: 1.1.2_fkfqfehjtk7sk2efaqbgxsuasa
-      eslint-import-resolver-typescript: 3.4.1_2iahngt3u2tkbdlu6s4gkur3pu
-      eslint-plugin-eslint-comments: 3.2.0_eslint@8.22.0
-      eslint-plugin-import: 2.26.0_g5wkbnicgr2n6ig4tvi45b7ibe
-      eslint-plugin-jsx-a11y: 6.6.1_eslint@8.22.0
-      eslint-plugin-prettier: 4.2.1_i2cojdczqdiurzgttlwdgf764e
-      eslint-plugin-react: 7.30.1_eslint@8.22.0
-      eslint-plugin-react-hooks: 4.6.0_eslint@8.22.0
-      eslint-plugin-simple-import-sort: 7.0.0_eslint@8.22.0
-      eslint-plugin-tsdoc: 0.2.16
-      eslint-plugin-unicorn: 43.0.2_eslint@8.22.0
-      eslint-plugin-unused-imports: 2.0.0_ucuinlkkm5sdcezpfpmvmgdohq
-      prettier: 2.7.1
-    optionalDependencies:
-      '@next/eslint-plugin-next': 12.2.5
-      eslint-plugin-jest: 26.8.3_ucuinlkkm5sdcezpfpmvmgdohq
-      eslint-plugin-tailwindcss: 3.6.0
-      eslint-plugin-testing-library: 5.6.0_eslint@8.22.0
-    transitivePeerDependencies:
-      - '@babel/core'
-      - eslint-import-resolver-webpack
-      - jest
-      - supports-color
-      - ts-node
-    dev: true
-
   /@humanwhocodes/config-array/0.10.4:
     resolution: {integrity: sha512-mXAIHxZT3Vcpg83opl1wGlVZ9xydbfZO3r5YfRSH6Gpp2J/PfdBP0wbDa2sO6/qRbcalpoevVyW6A/fI6LfeMw==}
     engines: {node: '>=10.10.0'}
@@ -1715,6 +1676,45 @@ packages:
   /@sindresorhus/is/0.14.0:
     resolution: {integrity: sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==}
     engines: {node: '>=6'}
+    dev: true
+
+  /@strangelovelabs/style-guide/0.0.1_2xd4q2tc5cqa5as7uugqhp6oue:
+    resolution: {integrity: sha512-aIgwyCzPEP/lMAcfroYzbgoKAd6ehSmWcyhUVyhy8Qoeyly2y3cCXxiN/9d0vNz6pOxr6c2MdSpbfxmOFmXfgw==}
+    peerDependencies:
+      eslint: ^8
+      prettier: ^2
+      typescript: ^4
+    dependencies:
+      '@babel/eslint-parser': 7.18.9_eslint@8.22.0
+      '@rushstack/eslint-patch': 1.1.4
+      '@typescript-eslint/eslint-plugin': 5.33.1_3bh5nkk7utn7e74vrwtv6rxmt4
+      '@typescript-eslint/parser': 5.33.1_eslint@8.22.0
+      eslint: 8.22.0
+      eslint-config-prettier: 8.5.0_eslint@8.22.0
+      eslint-import-resolver-alias: 1.1.2_fkfqfehjtk7sk2efaqbgxsuasa
+      eslint-import-resolver-typescript: 3.4.1_2iahngt3u2tkbdlu6s4gkur3pu
+      eslint-plugin-eslint-comments: 3.2.0_eslint@8.22.0
+      eslint-plugin-import: 2.26.0_g5wkbnicgr2n6ig4tvi45b7ibe
+      eslint-plugin-jsx-a11y: 6.6.1_eslint@8.22.0
+      eslint-plugin-prettier: 4.2.1_i2cojdczqdiurzgttlwdgf764e
+      eslint-plugin-react: 7.30.1_eslint@8.22.0
+      eslint-plugin-react-hooks: 4.6.0_eslint@8.22.0
+      eslint-plugin-simple-import-sort: 7.0.0_eslint@8.22.0
+      eslint-plugin-tsdoc: 0.2.16
+      eslint-plugin-unicorn: 43.0.2_eslint@8.22.0
+      eslint-plugin-unused-imports: 2.0.0_ucuinlkkm5sdcezpfpmvmgdohq
+      prettier: 2.7.1
+    optionalDependencies:
+      '@next/eslint-plugin-next': 12.2.5
+      eslint-plugin-jest: 26.8.3_ucuinlkkm5sdcezpfpmvmgdohq
+      eslint-plugin-tailwindcss: 3.6.0
+      eslint-plugin-testing-library: 5.6.0_eslint@8.22.0
+    transitivePeerDependencies:
+      - '@babel/core'
+      - eslint-import-resolver-webpack
+      - jest
+      - supports-color
+      - ts-node
     dev: true
 
   /@swc/core-android-arm-eabi/1.2.233:

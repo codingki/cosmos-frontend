@@ -1,7 +1,6 @@
 {
   "name": "strangestarter",
   "version": "0.0.0",
-  "packageManager": "pnpm@7.8.0",
   "workspaces": [
     "packages/*",
     "website"
@@ -18,7 +17,7 @@
   },
   "devDependencies": {
     "@chakra-ui/cli": "^2",
-    "@grikomsn/style-guide": "latest",
+    "@strangelovelabs/style-guide": "latest",
     "eslint": "^8",
     "husky": "^8",
     "lint-staged": "^13",
@@ -35,7 +34,7 @@
       "prettier --write"
     ]
   },
-  "prettier": "@grikomsn/style-guide/prettier",
+  "prettier": "@strangelovelabs/style-guide/prettier",
   "private": true,
   "license": "MIT"
 }
